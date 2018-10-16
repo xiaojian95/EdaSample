@@ -15,16 +15,11 @@ namespace EdaSample
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IEventHandler, CustomerCreatedEventHandler>();
-            services.AddSingleton<IEventBus, PassThroughEventBus>();
 
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
-
-            eventBus.Subscribe<CustomerCreatedEvent, CustomerCreatedEventHandler>();
 
         }
     }

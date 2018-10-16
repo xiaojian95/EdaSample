@@ -15,12 +15,12 @@ namespace EdaSample
 
 
 
-            var serviceProvider = new ServiceCollection().BuildServiceProvider();
-            //    .AddTransient<IEventHandler, CustomerCreatedEventHandler>()
-            //    .AddTransient<IEventBus, PassThroughEventBus>()
-            //    .BuildServiceProvider();
+            var serviceProvider = new ServiceCollection()
+                .AddTransient<IEventHandler, CustomerCreatedEventHandler>()
+                .AddTransient<IEventBus, PassThroughEventBus>()
+               .BuildServiceProvider();
             var eventBus = serviceProvider.GetRequiredService<IEventBus>();
-            //eventBus.Subscribe<CustomerCreatedEvent, CustomerCreatedEventHandler>();
+            eventBus.Subscribe<CustomerCreatedEvent, CustomerCreatedEventHandler>();
 
 
             eventBus.PublishAsync(new CustomerCreatedEvent("张飞", "zhangfei@163.com"));

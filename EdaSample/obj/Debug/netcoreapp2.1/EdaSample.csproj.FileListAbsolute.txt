@@ -19,3 +19,4 @@ C:\Users\xiaojian\Desktop\EdaSample\EdaSample\obj\Debug\netcoreapp2.1\EdaSample.
 C:\Users\xiaojian\Desktop\EdaSample\EdaSample\obj\Debug\netcoreapp2.1\EdaSample.AssemblyInfo.cs
 C:\Users\xiaojian\Desktop\EdaSample\EdaSample\obj\Debug\netcoreapp2.1\EdaSample.dll
 C:\Users\xiaojian\Desktop\EdaSample\EdaSample\obj\Debug\netcoreapp2.1\EdaSample.pdb
+C:\Users\xiaojian\Desktop\EdaSample\EdaSample\obj\Debug\netcoreapp2.1\EdaSample.csprojAssemblyReference.cache
